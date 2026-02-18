@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #141414;
+  --bg-card: #1a1a1a;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --accent: #a8ff35;
+  --accent-dim: rgba(168, 255, 53, 0.1);
+  --border: #2a2a2a;
+}
+
+/* ============================= */
+/* GLOBAL BODY */
+/* ============================= */
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+#root {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================= */
+/* SCROLL INDICATOR */
+/* ============================= */
+
+.scroll-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--bg-secondary);
+  z-index: 1000;
+}
+
+.scroll-progress {
+  height: 100%;
+  background: var(--accent);
+  width: 0%;
+  transition: width 0.1s ease;
+}
+
+/* ============================= */
+/* GLOBAL UTILITIES */
+/* ============================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg-primary);
+}
+
+/* ============================= */
+/* SECTION STYLES */
+/* ============================= */
+
+.section {
+  padding: 6rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+/* ============================= */
+/* CARD STYLES */
+/* ============================= */
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+/* ============================= */
+/* TIMELINE */
+/* ============================= */
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--accent), transparent);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 2rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -2.5rem;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--bg-primary), 0 0 0 6px var(--accent-dim);
+}
+
+.timeline-date {
+  font-size: 0.875rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-org {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+}
+
+.timeline-description {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 1.5rem;
+  }
+
+  .timeline {
+    padding-left: 1rem;
+  }
+
+  .timeline-item {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-item::before {
+    left: -1.75rem;
+  }
+}
+
+/* =======================================================
+   🟢 DARK GREY HEXAGON BACKGROUND (SUBTLE PREMIUM VERSION)
+   ======================================================= */
+
+body {
+  background: #0f0f0f; /* slightly grey instead of pure black */
+}
+
+/* Hexagon layer */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+
+  /* layered hexagon grid using gradients */
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.03) 2px, transparent 3px),
+    radial-gradient(circle at 70% 60%, rgba(255,255,255,0.02) 3px, transparent 4px),
+    repeating-linear-gradient(
+      60deg,
+      rgba(255,255,255,0.03) 0px,
+      rgba(255,255,255,0.03) 1px,
+      transparent 1px,
+      transparent 30px
+    ),
+    repeating-linear-gradient(
+      -60deg,
+      rgba(255,255,255,0.025) 0px,
+      rgba(255,255,255,0.025) 1px,
+      transparent 1px,
+      transparent 32px
+    );
+
+  background-size: 120px 120px, 180px 180px, 40px 40px, 40px 40px;
+  opacity: 0.35;
+}
+
+/* subtle matte overlay for depth */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+
+  background:
+    radial-gradient(circle at 40% 50%, rgba(168,255,53,0.05), transparent 45%),
+    linear-gradient(180deg, rgba(10,10,10,0.7), rgba(10,10,10,0.9));
+}

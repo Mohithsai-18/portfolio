@@ -1,0 +1,41 @@
+.languages-card {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.language-item {
+  margin-bottom: 1.5rem;
+}
+
+.language-item:last-child {
+  margin-bottom: 0;
+}
+
+.language-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.language-name {
+  font-weight: 600;
+}
+
+.language-level {
+  color: var(--accent);
+  font-size: 0.875rem;
+}
+
+.language-bar {
+  height: 8px;
+  background: var(--bg-secondary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.language-progress {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), #6eb323);
+  border-radius: 4px;
+  transition: width 1s ease;
+}

@@ -1,0 +1,16 @@
+.about-card {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .about-text {
+    font-size: 1rem;
+  }
+}
