@@ -1253,10 +1253,10 @@ export default function Projects() {
         deployment: "Google Play Store / APK"
       },
       screenshots: [
-        "/projects/plan-your-day/dashboard.png",
-        "/projects/plan-your-day/create_task.png",
-        "/projects/plan-your-day/monthly_tasks.png",
-        "/projects/plan-your-day/completed_tasks.png"
+        "/portfolio/projects/plan-your-day/dashboard.png",
+        "/portfolio/projects/plan-your-day/create_task.png",
+        "/portfolio/projects/plan-your-day/monthly_tasks.png",
+        "/portfolio/projects/plan-your-day/completed_tasks.png"
       ],
       githubRepository: "https://github.com/Mohithsai-18",
       liveDemo: "#",
@@ -1270,10 +1270,10 @@ export default function Projects() {
       github: "https://github.com/Mohithsai-18",
       demo: "#",
       images: [
-        "/projects/plan-your-day/dashboard.png",
-        "/projects/plan-your-day/create_task.png",
-        "/projects/plan-your-day/monthly_tasks.png",
-        "/projects/plan-your-day/completed_tasks.png"
+        "/portfolio/projects/plan-your-day/dashboard.png",
+        "/portfolio/projects/plan-your-day/create_task.png",
+        "/portfolio/projects/plan-your-day/monthly_tasks.png",
+        "/portfolio/projects/plan-your-day/completed_tasks.png"
       ],
       illustrationClass: "bg-white/[0.01] border border-white/5",
       graphic: (
@@ -1305,13 +1305,13 @@ export default function Projects() {
         deployment: "Local Host / Docker"
       },
       screenshots: [
-        "/projects/biomedical/dashboard-overview.png",
-        "/projects/biomedical/upload-page.png",
-        "/projects/biomedical/analysis-results.png",
-        "/projects/biomedical/compare-page.png",
-        "/projects/biomedical/history-page.png",
-        "/projects/biomedical/mobile-dashboard.png",
-        "/projects/biomedical/mobile-upload.png"
+        "/portfolio/projects/biomedical/dashboard-overview.png",
+        "/portfolio/projects/biomedical/upload-page.png",
+        "/portfolio/projects/biomedical/analysis-results.png",
+        "/portfolio/projects/biomedical/compare-page.png",
+        "/portfolio/projects/biomedical/history-page.png",
+        "/portfolio/projects/biomedical/mobile-dashboard.png",
+        "/portfolio/projects/biomedical/mobile-upload.png"
       ],
       githubRepository: "https://github.com/Mohithsai-18/retinal-disease-detection-ai",
       liveDemo: "#",
@@ -1325,13 +1325,13 @@ export default function Projects() {
       github: "https://github.com/Mohithsai-18/retinal-disease-detection-ai",
       demo: "#",
       images: [
-        "/projects/biomedical/dashboard-overview.png",
-        "/projects/biomedical/upload-page.png",
-        "/projects/biomedical/analysis-results.png",
-        "/projects/biomedical/compare-page.png",
-        "/projects/biomedical/history-page.png",
-        "/projects/biomedical/mobile-dashboard.png",
-        "/projects/biomedical/mobile-upload.png"
+        "/portfolio/projects/biomedical/dashboard-overview.png",
+        "/portfolio/projects/biomedical/upload-page.png",
+        "/portfolio/projects/biomedical/analysis-results.png",
+        "/portfolio/projects/biomedical/compare-page.png",
+        "/portfolio/projects/biomedical/history-page.png",
+        "/portfolio/projects/biomedical/mobile-dashboard.png",
+        "/portfolio/projects/biomedical/mobile-upload.png"
       ],
       illustrationClass: "bg-white/[0.01] border border-white/5",
       graphic: (
@@ -1360,12 +1360,12 @@ export default function Projects() {
         deployment: "Vercel / Local Host"
       },
       screenshots: [
-        "/projects/devcollab/landing.png",
-        "/projects/devcollab/dashboard.png",
-        "/projects/devcollab/sprints.png",
-        "/projects/devcollab/ai_tools.png",
-        "/projects/devcollab/login.png",
-        "/projects/devcollab/register.png"
+        "/portfolio/projects/devcollab/landing.png",
+        "/portfolio/projects/devcollab/dashboard.png",
+        "/portfolio/projects/devcollab/sprints.png",
+        "/portfolio/projects/devcollab/ai_tools.png",
+        "/portfolio/projects/devcollab/login.png",
+        "/portfolio/projects/devcollab/register.png"
       ],
       githubRepository: "https://github.com/Mohithsai-18/devcollab",
       liveDemo: "https://devcollab-xi.vercel.app/",
@@ -1379,12 +1379,12 @@ export default function Projects() {
       github: "https://github.com/Mohithsai-18/devcollab",
       demo: "https://devcollab-xi.vercel.app/",
       images: [
-        "/projects/devcollab/landing.png",
-        "/projects/devcollab/dashboard.png",
-        "/projects/devcollab/sprints.png",
-        "/projects/devcollab/ai_tools.png",
-        "/projects/devcollab/login.png",
-        "/projects/devcollab/register.png"
+        "/portfolio/projects/devcollab/landing.png",
+        "/portfolio/projects/devcollab/dashboard.png",
+        "/portfolio/projects/devcollab/sprints.png",
+        "/portfolio/projects/devcollab/ai_tools.png",
+        "/portfolio/projects/devcollab/login.png",
+        "/portfolio/projects/devcollab/register.png"
       ],
       illustrationClass: "bg-white/[0.01] border border-white/5",
       graphic: (
@@ -1415,12 +1415,12 @@ export default function Projects() {
         deployment: "Kubernetes Cluster (Helm charts)"
       },
       screenshots: [
-        "/projects/aperture/swagger_docs.png",
-        "/projects/aperture/health_check.png",
-        "/projects/aperture/metrics.png",
-        "/projects/aperture/grafana_dashboard_overview.png",
-        "/projects/aperture/grafana_dashboard_details.png",
-        "/projects/aperture/grafana_alerts.png"
+        "/portfolio/projects/aperture/swagger_docs.png",
+        "/portfolio/projects/aperture/health_check.png",
+        "/portfolio/projects/aperture/metrics.png",
+        "/portfolio/projects/aperture/grafana_dashboard_overview.png",
+        "/portfolio/projects/aperture/grafana_dashboard_details.png",
+        "/portfolio/projects/aperture/grafana_alerts.png"
       ],
       githubRepository: "https://github.com/Mohithsai-18/aperture-ai",
       liveDemo: "#",
@@ -1434,12 +1434,12 @@ export default function Projects() {
       github: "https://github.com/Mohithsai-18/aperture-ai",
       demo: "#",
       images: [
-        "/projects/aperture/swagger_docs.png",
-        "/projects/aperture/health_check.png",
-        "/projects/aperture/metrics.png",
-        "/projects/aperture/grafana_dashboard_overview.png",
-        "/projects/aperture/grafana_dashboard_details.png",
-        "/projects/aperture/grafana_alerts.png"
+        "/portfolio/projects/aperture/swagger_docs.png",
+        "/portfolio/projects/aperture/health_check.png",
+        "/portfolio/projects/aperture/metrics.png",
+        "/portfolio/projects/aperture/grafana_dashboard_overview.png",
+        "/portfolio/projects/aperture/grafana_dashboard_details.png",
+        "/portfolio/projects/aperture/grafana_alerts.png"
       ],
       illustrationClass: "bg-white/[0.01] border border-white/5",
       graphic: (
@@ -1473,10 +1473,10 @@ export default function Projects() {
         deployment: "ESP32 Hardware Module"
       },
       screenshots: [
-        "/projects/trailguard/screen-1.png",
-        "/projects/trailguard/screen-2.png",
-        "/projects/trailguard/screen-3.png",
-        "/projects/trailguard/screen-4.png"
+        "/portfolio/projects/trailguard/screen-1.png",
+        "/portfolio/projects/trailguard/screen-2.png",
+        "/portfolio/projects/trailguard/screen-3.png",
+        "/portfolio/projects/trailguard/screen-4.png"
       ],
       githubRepository: "",
       liveDemo: "#",
@@ -1490,10 +1490,10 @@ export default function Projects() {
       github: "",
       demo: "#",
       images: [
-        "/projects/trailguard/screen-1.png",
-        "/projects/trailguard/screen-2.png",
-        "/projects/trailguard/screen-3.png",
-        "/projects/trailguard/screen-4.png"
+        "/portfolio/projects/trailguard/screen-1.png",
+        "/portfolio/projects/trailguard/screen-2.png",
+        "/portfolio/projects/trailguard/screen-3.png",
+        "/portfolio/projects/trailguard/screen-4.png"
       ],
       illustrationClass: "bg-white/[0.01] border border-white/5",
       graphic: (
@@ -1521,11 +1521,11 @@ export default function Projects() {
         deployment: "Google Cloud Kubernetes Engine"
       },
       screenshots: [
-        "/projects/apex-trading/cover.webp",
-        "/projects/apex-trading/screen-1.webp",
-        "/projects/apex-trading/screen-2.webp",
-        "/projects/apex-trading/screen-3.webp",
-        "/projects/apex-trading/screen-4.webp"
+        "/portfolio/projects/apex-trading/cover.webp",
+        "/portfolio/projects/apex-trading/screen-1.webp",
+        "/portfolio/projects/apex-trading/screen-2.webp",
+        "/portfolio/projects/apex-trading/screen-3.webp",
+        "/portfolio/projects/apex-trading/screen-4.webp"
       ],
       githubRepository: "https://github.com/Mohithsai-18",
       liveDemo: "#",
@@ -1539,11 +1539,11 @@ export default function Projects() {
       github: "https://github.com/Mohithsai-18",
       demo: "#",
       images: [
-        "/projects/apex-trading/cover.webp",
-        "/projects/apex-trading/screen-1.webp",
-        "/projects/apex-trading/screen-2.webp",
-        "/projects/apex-trading/screen-3.webp",
-        "/projects/apex-trading/screen-4.webp"
+        "/portfolio/projects/apex-trading/cover.webp",
+        "/portfolio/projects/apex-trading/screen-1.webp",
+        "/portfolio/projects/apex-trading/screen-2.webp",
+        "/portfolio/projects/apex-trading/screen-3.webp",
+        "/portfolio/projects/apex-trading/screen-4.webp"
       ],
       illustrationClass: "bg-white/[0.01] border border-white/5",
       graphic: (
@@ -1570,11 +1570,11 @@ export default function Projects() {
         deployment: "Local System / Docker"
       },
       screenshots: [
-        "/projects/pharmaflow/cover.webp",
-        "/projects/pharmaflow/screen-1.webp",
-        "/projects/pharmaflow/screen-2.webp",
-        "/projects/pharmaflow/screen-3.webp",
-        "/projects/pharmaflow/screen-4.webp"
+        "/portfolio/projects/pharmaflow/cover.webp",
+        "/portfolio/projects/pharmaflow/screen-1.webp",
+        "/portfolio/projects/pharmaflow/screen-2.webp",
+        "/portfolio/projects/pharmaflow/screen-3.webp",
+        "/portfolio/projects/pharmaflow/screen-4.webp"
       ],
       githubRepository: "https://github.com/Mohithsai-18/Pharmacy-DBMS",
       liveDemo: "http://127.0.0.1:5005/dashboard",
@@ -1588,11 +1588,11 @@ export default function Projects() {
       github: "https://github.com/Mohithsai-18/Pharmacy-DBMS",
       demo: "http://127.0.0.1:5005/dashboard",
       images: [
-        "/projects/pharmaflow/cover.webp",
-        "/projects/pharmaflow/screen-1.webp",
-        "/projects/pharmaflow/screen-2.webp",
-        "/projects/pharmaflow/screen-3.webp",
-        "/projects/pharmaflow/screen-4.webp"
+        "/portfolio/projects/pharmaflow/cover.webp",
+        "/portfolio/projects/pharmaflow/screen-1.webp",
+        "/portfolio/projects/pharmaflow/screen-2.webp",
+        "/portfolio/projects/pharmaflow/screen-3.webp",
+        "/portfolio/projects/pharmaflow/screen-4.webp"
       ],
       illustrationClass: "bg-white/[0.01] border border-white/5",
       graphic: (
@@ -1619,11 +1619,11 @@ export default function Projects() {
         deployment: "Solar-Powered Node Hardware"
       },
       screenshots: [
-        "/projects/smart-irrigation/cover.webp",
-        "/projects/smart-irrigation/screen-1.webp",
-        "/projects/smart-irrigation/screen-2.webp",
-        "/projects/smart-irrigation/screen-3.webp",
-        "/projects/smart-irrigation/screen-4.webp"
+        "/portfolio/projects/smart-irrigation/cover.webp",
+        "/portfolio/projects/smart-irrigation/screen-1.webp",
+        "/portfolio/projects/smart-irrigation/screen-2.webp",
+        "/portfolio/projects/smart-irrigation/screen-3.webp",
+        "/portfolio/projects/smart-irrigation/screen-4.webp"
       ],
       githubRepository: "https://github.com/Mohithsai-18",
       liveDemo: "#",
@@ -1637,11 +1637,11 @@ export default function Projects() {
       github: "https://github.com/Mohithsai-18",
       demo: "#",
       images: [
-        "/projects/smart-irrigation/cover.webp",
-        "/projects/smart-irrigation/screen-1.webp",
-        "/projects/smart-irrigation/screen-2.webp",
-        "/projects/smart-irrigation/screen-3.webp",
-        "/projects/smart-irrigation/screen-4.webp"
+        "/portfolio/projects/smart-irrigation/cover.webp",
+        "/portfolio/projects/smart-irrigation/screen-1.webp",
+        "/portfolio/projects/smart-irrigation/screen-2.webp",
+        "/portfolio/projects/smart-irrigation/screen-3.webp",
+        "/portfolio/projects/smart-irrigation/screen-4.webp"
       ],
       illustrationClass: "bg-white/[0.01] border border-white/5",
       graphic: (
@@ -1668,14 +1668,14 @@ export default function Projects() {
         deployment: "Local Institutional Gateway / Docker"
       },
       screenshots: [
-        "/projects/scan-your-attendance/dashboard.png",
-        "/projects/scan-your-attendance/login.png",
-        "/projects/scan-your-attendance/register_student.png",
-        "/projects/scan-your-attendance/attendance_history.png",
-        "/projects/scan-your-attendance/attendance_history_grid.png",
-        "/projects/scan-your-attendance/live_scanner.png",
-        "/projects/scan-your-attendance/reports.png",
-        "/projects/scan-your-attendance/settings.png"
+        "/portfolio/projects/scan-your-attendance/dashboard.png",
+        "/portfolio/projects/scan-your-attendance/login.png",
+        "/portfolio/projects/scan-your-attendance/register_student.png",
+        "/portfolio/projects/scan-your-attendance/attendance_history.png",
+        "/portfolio/projects/scan-your-attendance/attendance_history_grid.png",
+        "/portfolio/projects/scan-your-attendance/live_scanner.png",
+        "/portfolio/projects/scan-your-attendance/reports.png",
+        "/portfolio/projects/scan-your-attendance/settings.png"
       ],
       githubRepository: "https://github.com/Mohithsai-18/scan-your-attendance",
       liveDemo: "#",
@@ -1689,14 +1689,14 @@ export default function Projects() {
       github: "https://github.com/Mohithsai-18/scan-your-attendance",
       demo: "#",
       images: [
-        "/projects/scan-your-attendance/dashboard.png",
-        "/projects/scan-your-attendance/login.png",
-        "/projects/scan-your-attendance/register_student.png",
-        "/projects/scan-your-attendance/attendance_history.png",
-        "/projects/scan-your-attendance/attendance_history_grid.png",
-        "/projects/scan-your-attendance/live_scanner.png",
-        "/projects/scan-your-attendance/reports.png",
-        "/projects/scan-your-attendance/settings.png"
+        "/portfolio/projects/scan-your-attendance/dashboard.png",
+        "/portfolio/projects/scan-your-attendance/login.png",
+        "/portfolio/projects/scan-your-attendance/register_student.png",
+        "/portfolio/projects/scan-your-attendance/attendance_history.png",
+        "/portfolio/projects/scan-your-attendance/attendance_history_grid.png",
+        "/portfolio/projects/scan-your-attendance/live_scanner.png",
+        "/portfolio/projects/scan-your-attendance/reports.png",
+        "/portfolio/projects/scan-your-attendance/settings.png"
       ],
       illustrationClass: "bg-white/[0.01] border border-white/5",
       graphic: (
@@ -1722,11 +1722,11 @@ export default function Projects() {
         deployment: "Vercel Edge Network"
       },
       screenshots: [
-        "/projects/portfolio/cover.webp",
-        "/projects/portfolio/screen-1.webp",
-        "/projects/portfolio/screen-2.webp",
-        "/projects/portfolio/screen-3.webp",
-        "/projects/portfolio/screen-4.webp"
+        "/portfolio/projects/portfolio/cover.webp",
+        "/portfolio/projects/portfolio/screen-1.webp",
+        "/portfolio/projects/portfolio/screen-2.webp",
+        "/portfolio/projects/portfolio/screen-3.webp",
+        "/portfolio/projects/portfolio/screen-4.webp"
       ],
       githubRepository: "https://github.com/Mohithsai-18/portfolio",
       liveDemo: "#",
@@ -1740,11 +1740,11 @@ export default function Projects() {
       github: "https://github.com/Mohithsai-18/portfolio",
       demo: "#",
       images: [
-        "/projects/portfolio/cover.webp",
-        "/projects/portfolio/screen-1.webp",
-        "/projects/portfolio/screen-2.webp",
-        "/projects/portfolio/screen-3.webp",
-        "/projects/portfolio/screen-4.webp"
+        "/portfolio/projects/portfolio/cover.webp",
+        "/portfolio/projects/portfolio/screen-1.webp",
+        "/portfolio/projects/portfolio/screen-2.webp",
+        "/portfolio/projects/portfolio/screen-3.webp",
+        "/portfolio/projects/portfolio/screen-4.webp"
       ],
       illustrationClass: "bg-white/[0.01] border border-white/5",
       graphic: (

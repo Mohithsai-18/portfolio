@@ -86,7 +86,7 @@ export default function About() {
               {/* Image Frame */}
               <div className="relative aspect-[4/5] rounded-[32px] overflow-hidden bg-black/40 border border-white/5">
                 <img 
-                  src="/about_profile.png" 
+                  src="/portfolio/about_profile.png" 
                   alt="Mohith Sai Portrait" 
                   className="w-full h-full object-cover object-center transition-all duration-500 ease-out transform hover:scale-[1.02]"
                 />
