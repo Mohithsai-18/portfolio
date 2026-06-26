@@ -1,65 +1,45 @@
 "use client";
 
-import React, { useState } from "react";
-import { Cloud, LineChart, Code2, BrainCircuit } from "lucide-react";
+import React from "react";
+import { Code2, Cpu } from "lucide-react";
 import GlassCard from "../ui/GlassCard";
 import AnimatedReveal from "../ui/AnimatedReveal";
-import GlowButton from "../ui/GlowButton";
 
 export default function Certifications() {
-  const [showAllCerts, setShowAllCerts] = useState(false);
-
-  const featuredCerts = [
-    {
-      title: "AWS Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      year: "2024",
-      icon: <Cloud className="w-4 h-4 text-[#8A8A8A]" />,
-    },
-    {
-      title: "Google Data Analytics",
-      issuer: "Google",
-      year: "2024",
-      icon: <LineChart className="w-4 h-4 text-[#8A8A8A]" />,
-    },
-    {
-      title: "TensorFlow Developer",
-      issuer: "DeepLearning.AI",
-      year: "2023",
-      icon: <Code2 className="w-4 h-4 text-[#8A8A8A]" />,
-    },
-    {
-      title: "Deep Learning Specialization",
-      issuer: "DeepLearning.AI",
-      year: "2023",
-      icon: <BrainCircuit className="w-4 h-4 text-[#8A8A8A]" />,
-    },
-  ];
-
-  const additionalCerts = [
+  const certifications = [
     {
       title: "C Programming Certification",
       issuer: "Professional Academy",
+      year: "2024",
+      icon: <Code2 className="w-4 h-4 text-[#8A8A8A]" />,
       desc: "Data structures, pointer arithmetic, and algorithmic execution in C.",
     },
     {
       title: "Introduction to Python",
       issuer: "Software Foundations",
+      year: "2024",
+      icon: <Code2 className="w-4 h-4 text-[#8A8A8A]" />,
       desc: "Core paradigms covering functions, scripting, and data parsing structures.",
     },
     {
       title: "Verilog HDL Certification",
       issuer: "Silicon Design Lab",
+      year: "2023",
+      icon: <Cpu className="w-4 h-4 text-[#8A8A8A]" />,
       desc: "Hardware description language modeling, digital design and synthesis validation.",
     },
     {
       title: "VLSI Design Fundamentals",
       issuer: "Microelectronics Center",
+      year: "2023",
+      icon: <Cpu className="w-4 h-4 text-[#8A8A8A]" />,
       desc: "Transistor logic, circuit layout mapping and timing verification metrics.",
     },
     {
       title: "Java Programming Certification",
       issuer: "Enterprise Software Institute",
+      year: "2023",
+      icon: <Code2 className="w-4 h-4 text-[#8A8A8A]" />,
       desc: "Object-oriented system engineering and complex thread processing models.",
     },
   ];
@@ -121,78 +101,40 @@ export default function Certifications() {
             </h3>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {featuredCerts.map((cert, idx) => (
+          <div className="grid grid-cols-1 gap-3">
+            {certifications.map((cert, idx) => (
               <AnimatedReveal 
                 key={idx} 
                 direction="right" 
-                delay={idx * 0.03}
+                delay={idx * 0.05}
                 className="flex w-full"
               >
                 <GlassCard 
                   enableTilt={false} 
                   glowColor="rgba(255, 255, 255, 0.02)"
-                  className="p-5 flex flex-col justify-between"
+                  className="p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 w-full"
                 >
-                  <div className="flex items-center gap-2.5 mb-3">
-                    <div className="w-8 h-8 rounded-lg bg-white/[0.01] border border-white/5 flex items-center justify-center">
+                  <div className="flex items-center gap-3.5">
+                    <div className="w-8 h-8 rounded-lg bg-white/[0.01] border border-white/5 flex items-center justify-center shrink-0">
                       {cert.icon}
                     </div>
                     <div>
-                      <h4 className="font-display text-[11px] font-bold text-[#F5F5F5] uppercase tracking-wider leading-tight">
+                      <h4 className="font-display text-[12px] font-bold text-[#F5F5F5] uppercase tracking-wider leading-tight">
                         {cert.title}
                       </h4>
-                      <span className="text-[9.5px] text-[#8A8A8A] font-sans block mt-0.5">
-                        {cert.issuer}
+                      <span className="text-[10px] text-[#8A8A8A] font-sans block mt-1">
+                        {cert.issuer} — {cert.desc}
                       </span>
                     </div>
                   </div>
                   
-                  <div className="flex items-center justify-between text-[8.5px] tracking-widest font-display text-[#8A8A8A] uppercase border-t border-white/5 pt-2.5">
-                    <span>Credential Secure</span>
+                  <div className="flex sm:flex-col items-end justify-between sm:justify-center text-[8.5px] tracking-widest font-display text-[#8A8A8A] uppercase border-t sm:border-t-0 border-white/5 pt-2 sm:pt-0 shrink-0">
                     <span className="text-[#B7FF2A] font-bold">{cert.year}</span>
                   </div>
                 </GlassCard>
               </AnimatedReveal>
             ))}
           </div>
-
-          {/* View All Certifications Button */}
-          <div className="flex justify-start mt-2">
-            <GlowButton 
-              onClick={() => setShowAllCerts(!showAllCerts)}
-              variant="secondary"
-              className="px-5 py-2.5 flex items-center gap-1.5"
-            >
-              {showAllCerts ? "Collapse Certifications" : "View All Certifications"}
-            </GlowButton>
-          </div>
-
-          {/* Expandable Certifications Vault Drawer */}
-          {showAllCerts && (
-            <AnimatedReveal direction="up" delay={0.1} className="w-full mt-3">
-              <div className="grid grid-cols-1 gap-3 p-4 border border-white/5 bg-white/[0.01] rounded-xl">
-                {additionalCerts.map((cert, idx) => (
-                  <div 
-                    key={idx} 
-                    className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 py-2.5 border-b border-white/5 last:border-b-0"
-                  >
-                    <div>
-                      <h5 className="font-display text-[12px] font-bold text-[#F5F5F5] uppercase tracking-wider">
-                        {cert.title}
-                      </h5>
-                      <span className="text-[10px] text-[#8A8A8A] font-sans mt-0.5 block">
-                        {cert.issuer} — {cert.desc}
-                      </span>
-                    </div>
-                    <span className="text-[8.5px] tracking-widest text-[#B7FF2A] font-display font-semibold uppercase shrink-0">
-                      VERIFIED SYSTEM
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </AnimatedReveal>
-          )}
         </div>
 
       </div>
