@@ -70,7 +70,7 @@ export default function Certifications() {
               </h4>
               <div className="flex items-center justify-between text-[11px] text-[#8A8A8A] font-sans tracking-wide mt-1.5">
                 <span>2023 – Present</span>
-                <span className="text-[#B7FF2A] font-bold">CGPA: 9.5 / 10.0</span>
+                <span className="text-[#B7FF2A] font-bold">CGPA: 9.2 / 10.0</span>
               </div>
             </GlassCard>
 

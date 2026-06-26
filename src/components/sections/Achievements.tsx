@@ -14,8 +14,8 @@ export default function Achievements() {
       icon: <Trophy className="w-4 h-4 text-[#8A8A8A]" />,
     },
     {
-      title: "1st Prize — Smart India Hackathon",
-      desc: "Developed an AI powered solution for smart automation and IoT-based urban resilience ecosystems.",
+      title: "Participant — Smart India Hackathon",
+      desc: "Developed an AI powered solution for smart automation and IoT-based urban resilience ecosystems as a team participant.",
       icon: <Star className="w-4 h-4 text-[#8A8A8A]" />,
     },
     {
