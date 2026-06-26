@@ -1,0 +1,185 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505;
+  --foreground: #F5F5F5;
+  --secondary-dark: #0A0A0A;
+  --muted-gray: #8A8A8A;
+  --neon-green: #B7FF2A;
+}
+
+@theme {
+  --color-matte-black: var(--background);
+  --color-carbon-black: var(--secondary-dark);
+  --color-deep-charcoal: #111111;
+  --color-soft-dark-grey: #1A1A1A;
+  --color-neon-green: var(--neon-green);
+  --color-metallic-silver: #EAEAEA;
+  
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), sans-serif;
+  --font-signature: var(--font-caveat), cursive;
+  
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-glow: pulse-glow 2s ease-in-out infinite;
+  --animate-drift: drift 20s linear infinite;
+  --animate-fade-up: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(0.5deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(183, 255, 42, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(183, 255, 42, 0.35);
+  }
+}
+
+@keyframes drift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--matte-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--soft-dark-grey);
+  border: 2px solid var(--matte-black);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-green);
+}
+
+/* Glassmorphism Styles */
+.glass-panel {
+  background: rgba(0, 0, 0, 0.7) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
+}
+
+.glass-panel-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(0, 0, 0, 0.55) !important;
+  border-color: rgba(183, 255, 42, 0.45) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5), 0 0 25px rgba(183, 255, 42, 0.08) !important;
+}
+
+/* Water Bubble Glassmorphism Styles */
+.bubble-glass {
+  background: rgba(5, 5, 5, 0.85) !important;
+  backdrop-filter: blur(28px) !important;
+  -webkit-backdrop-filter: blur(28px) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 40px !important;
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.5s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  position: relative;
+  overflow: hidden;
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  
+  /* Water bubble lighting and reflections */
+  box-shadow: 
+    /* Top-left soft highlight (light reflection passing through water bubble) */
+    inset 3px 3px 12px rgba(255, 255, 255, 0.12),
+    /* Soft bottom-right dark tone for internal volume depth */
+    inset -3px -3px 12px rgba(0, 0, 0, 0.6),
+    /* Main soft shadow to elevate card above dune background */
+    0 12px 36px -8px rgba(0, 0, 0, 0.7),
+    /* Subtle outer edge glow */
+    0 0 20px rgba(255, 255, 255, 0.02) !important;
+}
+
+.bubble-glass::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  border-radius: 40px 40px 0 0;
+  /* Top reflection gradient mimicking water surface highlight */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0)
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* GPU Accelerated Animation Layer Optimization */
+.gpu-optimize {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Neon Glow utilities */
+.glow-text-green {
+  text-shadow: 0 0 8px rgba(183, 255, 42, 0.12);
+}
+
+.glow-border-green {
+  border-color: rgba(183, 255, 42, 0.15);
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  overflow-x: hidden;
+}
+
+/* Selection */
+::selection {
+  background: var(--neon-green);
+  color: var(--matte-black);
+}

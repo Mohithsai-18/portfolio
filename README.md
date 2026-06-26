@@ -1,156 +1,36 @@
-# Portfolio - Mohith Sai 
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-**🔗 Live Website:** [https://Mohithsai-18.github.io/portfolio/](https://Mohithsai-18.github.io/portfolio/)
+## Getting Started
 
-A modern, professional portfolio website built with React and Vite, featuring a sleek graphic design theme with neon green accents.
+First, run the development server:
 
-## 🚀 Features
-
-- ✨ Modern graphic design theme
-- 🎨 Neon green (#a8ff35) accent color
-- 🌙 Dark, premium aesthetic
-- 📱 Fully responsive design
-- ⚡ Smooth animations and transitions
-- 🎯 Clean, modular component structure
-- 📊 Easy to customize with data files
-
-## 🛠️ Tech Stack
-
-- **React 18** - UI Framework
-- **Vite** - Build tool and dev server
-- **CSS3** - Styling with custom properties
-- **JavaScript (ES6+)** - Programming language
-
-## 📦 Installation
-
-1. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-2. **Run development server:**
-   ```bash
-   npm run dev
-   ```
-
-3. **Build for production:**
-   ```bash
-   npm run build
-   ```
-
-4. **Preview production build:**
-   ```bash
-   npm run preview
-   ```
-
-## 📁 Project Structure
-
-```
-portfolio-app/
-├── src/
-│   ├── components/
-│   │   ├── Hero/
-│   │   ├── About/
-│   │   ├── Education/
-│   │   ├── Skills/
-│   │   ├── Experience/
-│   │   ├── Projects/
-│   │   ├── Certifications/
-│   │   ├── Achievements/
-│   │   ├── Languages/
-│   │   └── Footer/
-│   ├── data/
-│   │   ├── skillsData.js
-│   │   ├── projectsData.js
-│   │   └── experienceData.js
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-├── index.html
-├── package.json
-└── vite.config.js
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## 🎨 Customization
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Update Personal Information
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-1. **Hero Section**: Edit `src/components/Hero/Hero.jsx`
-2. **About Me**: Edit `src/components/About/About.jsx`
-3. **Education**: Edit `src/components/Education/Education.jsx`
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-### Update Data
+## Learn More
 
-All portfolio data can be easily updated in the data files:
+To learn more about Next.js, take a look at the following resources:
 
-- **Skills**: `src/data/skillsData.js`
-- **Projects**: `src/data/projectsData.js`
-- **Experience**: `src/data/experienceData.js`
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### Change Colors
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-Edit CSS custom properties in `src/index.css`:
+## Deploy on Vercel
 
-```css
-:root {
-  --bg-primary: #0a0a0a;
-  --bg-secondary: #141414;
-  --bg-card: #1a1a1a;
-  --text-primary: #ffffff;
-  --text-secondary: #a0a0a0;
-  --accent: #a8ff35;        /* Main accent color */
-  --accent-dim: rgba(168, 255, 53, 0.1);
-  --border: #2a2a2a;
-}
-```
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## 📱 Sections
-
-1. **Hero** - Eye-catching landing section with glowing signature
-2. **About** - Personal introduction and background
-3. **Education** - Academic qualifications
-4. **Skills** - Technical expertise organized by category
-5. **Experience** - Professional work history
-6. **Projects** - Featured portfolio projects
-7. **Certifications** - Professional certifications
-8. **Achievements** - Awards and recognition
-9. **Languages** - Language proficiency
-10. **Footer** - Contact information and social links
-
-## 🌟 Key Features
-
-### Scroll Progress Indicator
-A neon green progress bar at the top shows scroll progress.
-
-### Hover Effects
-- Cards lift on hover
-- Skill tags highlight
-- Buttons have dynamic shadows
-
-### Responsive Design
-Fully optimized for:
-- Desktop (1400px+)
-- Tablet (768px - 1400px)
-- Mobile (< 768px)
-
-### Smooth Animations
-- Glow effect on signature
-- Pulse effect on hero background
-- Smooth page transitions
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-
-## 🤝 Contributing
-
-Feel free to fork this project and customize it for your own portfolio!
-
-## 📧 Contact
-
-- Email:mohithsainadipi@gmail.com
-- Update contact links in `src/components/Footer/Footer.jsx`
-
----
-
-Built with ❤️ using React + Vite
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
